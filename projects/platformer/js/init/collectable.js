@@ -38,6 +38,8 @@
         
         // example: 
         createCollectable(type.steve, 200, 170, 6, 0.7);
+        createCollectable(type.max, 480, 490, 7, 0.8);
+        createCollectable(type.kennedi, 650, 350, 6, 0.7);
         
         
         
