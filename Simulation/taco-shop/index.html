@@ -68,27 +68,27 @@
             console.log('You should order something.')
             function takeOrder() {
                 var total = 0
-                var foodNumber = prompt('What do you want to eat fish monger');
-                // NOTE: the value will be stored as a string
-
-// Use conditional statements to update the value of the total
-// Make sure to additional else if statements for any additional menu items you added in TODO 1
-if (orderNumber === '1') {
-    total += 5.99;
-} else if (orderNumber === '2') {
-    total += 8.99;
-}
-else if (orderNumber === '3') {
-    total += 12.99
-}
-else if (orderNumber === '4') {
-    total += 10.99
-}
-else {
-    alert('Sorry, you entered an incorrect combo number'); // Let's the user know that they incorrectly entered information
-}
-            }
-            
+                var orderNumber = prompt('What do you want to eat fish monger');
+                if (orderNumber === '1') {
+                    total += 5.99;
+                    alert('your order will be $5.99')
+                } else if (orderNumber === '2') {
+                    total += 8.99;
+                    alert('Sorry, we do not sell this anymore')
+                }
+                else if (orderNumber === '3') {
+                    total += 12.99
+                    alert('Your order will be $12.99')
+                }
+                else if (orderNumber === '4') {
+                    total += 10.99
+                    alert('Your order will be $10.99')
+                }
+                else {
+                    alert('Sorry, you entered an incorrect combo number'); // Let's the user know that they incorrectly entered information
+                }
+          }
+                            
         </script>
     </body>
 </html>
