@@ -34,10 +34,8 @@ var init = function (window) {
          }
 
         // TODO 3 / 8 : Call the drawCircle() function 
-         var total = 0
-         while (total < 100){
-             drawCircle();
-             total++
+        for(var count = 0; count < 100; count++){
+            drawCircle()
          }
 
         ////////////////////////////////////////////////////////////
@@ -65,10 +63,9 @@ var init = function (window) {
            //game.checkCirclePosition( circles[3] );
 
             // TODO 9 : Iterate over the array
-           for (var i = 0; i < circles.length; i++){
-               var eachValue = circles[i];
-               physiks.updatePosition(eachValue);
-               game.checkCirclePosition(eachValue);
+           for (var i = 0; i < circles.length + 1; i++0{
+               physiks.updatePosition(circles[circles.length - i]);
+               game.checkCirclePosition(circles[circles.length - i]);
            }
             
         }
@@ -89,10 +86,13 @@ var init = function (window) {
             if (circle.x < 0){
                 circle.x = canvas.width;
             }
+            if (circle.x > canvas.width) {
+                circle.x = 0
+            }
             if (circle.y > canvas.height){
                 circle.y = 0;
             }
-            if (circle.y < 0) {
+            else if (circle.y < 0) {
                 circle.y = canvas.height;
             }
             // YOUR TODO 7 CODE ENDS HERE //////////////////////////
