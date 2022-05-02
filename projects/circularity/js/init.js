@@ -63,9 +63,10 @@ var init = function (window) {
            //game.checkCirclePosition( circles[3] );
 
             // TODO 9 : Iterate over the array
-           for (var i = 0; i < circles.length + 1; i++0{
-               physiks.updatePosition(circles[circles.length - i]);
-               game.checkCirclePosition(circles[circles.length - i]);
+           for (var i = 0; i < circles.length; i++) {
+               var eachValue = circles[i]; 
+               physikz.updatePosition(eachValue)
+               game.checkCirclePosition(eachValue)
            }
             
         }
